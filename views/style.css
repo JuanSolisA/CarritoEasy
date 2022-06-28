@@ -61,7 +61,7 @@ img {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;
+  justify-content:flex-start
 }
 
 .sumayresta {
@@ -80,6 +80,8 @@ img {
 .tacho {
   font-size: 1.5rem;
   padding: 2%;
+  position: absolute;
+  right: 0;
 }
 
 .vaciar__carro {
@@ -218,7 +220,7 @@ img {
 @media (min-width: 768px) {
   .maqueta__pc {
     display: flex;
-/*     background-color: lightsalmon; */
+    /*     background-color: lightsalmon; */
     flex-direction: row;
     justify-content: space-between;
   }
@@ -234,7 +236,7 @@ img {
     align-items: flex-start;
     width: 100%;
     text-align: start;
-    margin: auto; 
+    margin: auto;
     border: 1px solid gray;
     border-radius: 10px;
     font-size: 1rem;
@@ -246,21 +248,92 @@ img {
     display: flex;
     flex-direction: column;
     width: 40%;
- /*    background-color: #f9bb10; */
+    /*    background-color: #f9bb10; */
     padding: 15px;
     margin: 15px;
   }
-.prom__conteiner{
-  width: 100%;
-}
-
-  .resume__conteiner{
+  .prom__conteiner {
     width: 100%;
+  }
+
+  .resume__conteiner {
+    width: 100%;
+  }
+  .prod__cant__maqueta {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  section {
+    width: 100%;
+  }
+  .titulosProd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .tacho {
+    display: none;
+  }
+  .card__art {
+    display: flex;
+    flex-direction: row;
+  }
+  .img__conteiner {
+    width: 20%;
+    margin: auto;
+  }
+  .marca__prod,
+  .price__prod {
+    display: unset;
+  }
+  .prod__cant__conteiner{
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
   }
   .prod__cant__maqueta{
-    width: 100%;;
+    width: 100%;
+
+  }
+  .prod__cant__maqueta .img__conteiner{
+    width: 50px;
+    height: auto;
+  }
+  .prod__cant__maqueta .img__conteiner img{
+    width: 50px;
+  }
+  .desc__prod{
+    display: flex;
+    flex-direction: column;
+  }
+  .prod__container{
+    width: min-content;
   }
   section{
-    width: 100%;
+    position: relative;
+  }
+  .titulosProd .prod{
+    position: relative;
+    left: 5em;
+    width: auto;
+  }
+  .titulosProd .cant{
+    position: absolute;
+    right: 80px;
+    width: auto;
+  }
+  .titulosProd .tot{
+    position: relative;
+    right: 0.1em;
+    width: auto;
+  }
+  .desc__prod h4{
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .desc__prod h3{
+    font-size: 1.1rem;
+    font-weight: 400;
   }
 }
